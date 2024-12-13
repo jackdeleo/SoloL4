@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Groceries</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            padding: 1em 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header style="text-align: center; padding: 2em; background-color: #ececec;">
+        <h1 style="color: #333;">Jack's Groceries</h1>
+        <p style="font-style: italic;">Find all the food and drink you need!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#signup">Sign Up</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main style="padding: 2em;">
+        <section id="home">
+            <h2>Our Featured Foods</h2>
+            <p>Check out our food catalogue!</p>
+            <div style="display: flex; gap: 1em;">
+                <div>
+                    <p>Fruits and Veggies</p>
+                </div>
+                <div>
+                    <p>Frozen Foods</p>
+                </div>
+                <div>
+                    <p>Canned Goods</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Our Featured Drinks</h2>
+            <p>Check out our drink catalogue!</p>
+            <div style="display: flex; gap: 1em;">
+                <div>
+                    <p>Waters</p>
+                </div>
+                <div>
+                    <p>Sodas</p>
+                </div>
+                <div>
+                    <p>Energy Drinks</p>
+                </div>
+            </div>
+        </section>
+        <section id="signup">
+            <div class="form-container">
+                <h2 class="text-center">Sign Up</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
